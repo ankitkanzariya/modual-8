@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+        JQuery Animation?</h2>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto modi ullam adipisci a eos quis quaerat non nostrum molestiae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro dicta iure incidunt quis molestias omnis consequatur nemo. Aliquam, at dolorem? Ad modi unde consequatur, earum perferendis obcaecati rem commodi!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut quibusdam id, incidunt illo praesentium itaque corporis dolores maiores earum a accusantium quod, vitae sapiente natus perferendis? Sequi sunt iste reiciendis recusandae ullam nesciunt eveniet minus repellendus quidem, temporibus at.</p>
+
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas nihil ipsam asperiores totam vero sapiente nostrum hic incidunt ullam officiis non enim, voluptates tempora. Pariatur reprehenderit doloremque natus, nihil minima vitae minus corrupti enim impedit eius cupiditate delectus. Vel consequatur ipsam numquam quasi quidem tempora earum doloribus voluptate et eveniet ullam porro nihil eum saepe veniam necessitatibus aperiam, minima, quos, harum aut amet? Ad eligendi quasi neque saepe eos dolores earum. Magni delectus libero nulla distinctio, soluta saepe! Neque, enim aspernatur ipsum autem odit facilis vitae minima blanditiis omnis obcaecati iste consequatur asperiores cumque! Repudiandae est quo ea. Eum?</div>
+
+    <a href="https://topsint.com/careercenter/assignment/python_assignment_1704787556.pdf">JQ-Assignment</a>
+    <a href="https://careercenter.tops-int.com/assignment">Assignments</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+        $("p").css("background-color", "#fcf6e3");
+        $("p").animate({ width: "500px" }, 2500);
+
+        $("h1, h2, p").addClass("blue");
+
+        //$(selector).removeClass(className);
+
+        $("#box").css("background-color", "yellow");
+        
+        $("#box").animate({width: "700px", } , 5000, "swing", function() {
+  alert("Animation complete!");
+});
+        
+        </script>
+
+</body>
+</html>
+

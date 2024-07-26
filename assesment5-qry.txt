@@ -1,0 +1,39 @@
+# task 1 ---query1 for join multiple tables using left join.... 
+
+
+SELECT
+    country.country_name_eng AS country_name,
+    city.city_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city ON country.id = city.country_id
+LEFT JOIN
+    customer ON city.id = customer.city_id;
+ 
+
+
+-- Part 1: Return the list of all countries that have joined/exclude countries which are not referenced by any city
+SELECT
+    country.country_name_eng AS country_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city ON country.id = city.country_id
+LEFT JOIN
+    customer ON city.id = customer.city_id
+WHERE
+    city.id IS NOT NULL;
+
+-- Part 2: Return even pairs of not having a single customer
+SELECT
+    country.country_name_eng AS country_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city ON country.id = city.country_id
+LEFT JOIN
+    customer ON city.id = customer.city_id;
